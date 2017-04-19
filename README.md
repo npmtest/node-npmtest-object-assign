@@ -1,4 +1,7 @@
-# test coverage for  [object-assign (v4.1.1)](https://github.com/sindresorhus/object-assign#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-object-assign.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-object-assign) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-object-assign.svg)](https://travis-ci.org/npmtest/node-npmtest-object-assign)
+# npmtest-object-assign
+
+#### test coverage for  [object-assign (v4.1.1)](https://github.com/sindresorhus/object-assign#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-object-assign.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-object-assign) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-object-assign.svg)](https://travis-ci.org/npmtest/node-npmtest-object-assign)
+
 #### ES2015 `Object.assign()` ponyfill
 
 [![NPM](https://nodei.co/npm/object-assign.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/object-assign)
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-object-assign/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-object-assign/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-object-assign/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-object-assign/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-object-assign/build/screenCapture.buildCi.browser.coverage.example.html.png)](https://npmtest.github.io/node-npmtest-object-assign/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-object-assign/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-object-assign/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-object-assign/build/screenCapture.buildCi.browser.test-report.html.png)](https://npmtest.github.io/node-npmtest-object-assign/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-object-assign/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-object-assign/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-object-assign/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-object-assign/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-object-assign/build/test-report.html](https://npmtest.github.io/node-npmtest-object-assign/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-object-assign/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-object-assign/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-object-assign/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-object-assign/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-object-assign/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-object-assign/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-object-assign/build/screenCapture.npmPackageListing.svg)
 
