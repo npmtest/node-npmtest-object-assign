@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-object-assign/object-assign/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-object-assign/node_modules/object-assign/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-object-assign">npmtest-object-assign (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-object-assign/object-assign/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-object-assign/node_modules/object-assign/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">50% <small>(22 / 44)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-object-assign/object-assign/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-object-assign/node_modules/object-assign/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -408,18 +406,18 @@ var getOwnPropertySymbols = Object.getOwnPropertySymbols;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 var propIsEnumerable = Object.prototype.propertyIsEnumerable;
 &nbsp;
-<span class="fstat-no" title="function not covered" >function toObject(val) {</span>
-<span class="cstat-no" title="statement not covered" >	if (val === null || val === undefined) {</span>
-<span class="cstat-no" title="statement not covered" >		throw new TypeError('Object.assign cannot be called with null or undefined');</span>
+<span class="fstat-no" title="function not covered">function toObject(val) {</span>
+<span class="cstat-no" title="statement not covered">	if (val === null || val === undefined) {</span>
+<span class="cstat-no" title="statement not covered">		throw new TypeError('Object.assign cannot be called with null or undefined');</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	return Object(val);</span>
+<span class="cstat-no" title="statement not covered">	return Object(val);</span>
 }
 &nbsp;
 function shouldUseNative() {
 	try {
-		<span class="missing-if-branch" title="if path not taken" >I</span>if (!Object.assign) {
-<span class="cstat-no" title="statement not covered" >			return false;</span>
+		<span class="missing-if-branch" title="if path not taken">I</span>if (!Object.assign) {
+<span class="cstat-no" title="statement not covered">			return false;</span>
 		}
 &nbsp;
 		// Detect buggy property enumeration order in older V8 versions.
@@ -427,8 +425,8 @@ function shouldUseNative() {
 		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
 		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
 		test1[5] = 'de';
-		<span class="missing-if-branch" title="if path not taken" >I</span>if (Object.getOwnPropertyNames(test1)[0] === '5') {
-<span class="cstat-no" title="statement not covered" >			return false;</span>
+		<span class="missing-if-branch" title="if path not taken">I</span>if (Object.getOwnPropertyNames(test1)[0] === '5') {
+<span class="cstat-no" title="statement not covered">			return false;</span>
 		}
 &nbsp;
 		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
@@ -439,8 +437,8 @@ function shouldUseNative() {
 		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
 			return test2[n];
 		});
-		<span class="missing-if-branch" title="if path not taken" >I</span>if (order2.join('') !== '0123456789') {
-<span class="cstat-no" title="statement not covered" >			return false;</span>
+		<span class="missing-if-branch" title="if path not taken">I</span>if (order2.join('') !== '0123456789') {
+<span class="cstat-no" title="statement not covered">			return false;</span>
 		}
 &nbsp;
 		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
@@ -448,50 +446,51 @@ function shouldUseNative() {
 		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
 			test3[letter] = letter;
 		});
-		<span class="missing-if-branch" title="if path not taken" >I</span>if (Object.keys(Object.assign({}, test3)).join('') !==
+		<span class="missing-if-branch" title="if path not taken">I</span>if (Object.keys(Object.assign({}, test3)).join('') !==
 				'abcdefghijklmnopqrst') {
-<span class="cstat-no" title="statement not covered" >			return false;</span>
+<span class="cstat-no" title="statement not covered">			return false;</span>
 		}
 &nbsp;
 		return true;
 	} catch (err) {
 		// We don't expect any of the above to throw, but better to be safe.
-<span class="cstat-no" title="statement not covered" >		return false;</span>
+<span class="cstat-no" title="statement not covered">		return false;</span>
 	}
 }
 &nbsp;
-module.exports = shouldUseNative() ? Object.assign : <span class="fstat-no" title="function not covered" ><span class="branch-1 cbranch-no" title="branch not covered" >function (target, source) {</span></span>
-<span class="cstat-no" title="statement not covered" >	var from;</span>
-<span class="cstat-no" title="statement not covered" >	var to = toObject(target);</span>
-<span class="cstat-no" title="statement not covered" >	var symbols;</span>
+module.exports = shouldUseNative() ? Object.assign : <span class="fstat-no" title="function not covered"><span class="branch-1 cbranch-no" title="branch not covered">function (target, source) {</span></span>
+<span class="cstat-no" title="statement not covered">	var from;</span>
+<span class="cstat-no" title="statement not covered">	var to = toObject(target);</span>
+<span class="cstat-no" title="statement not covered">	var symbols;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	for (var s = 1; s &lt; arguments.length; s++) {</span>
-<span class="cstat-no" title="statement not covered" >		from = Object(arguments[s]);</span>
+<span class="cstat-no" title="statement not covered">	for (var s = 1; s &lt; arguments.length; s++) {</span>
+<span class="cstat-no" title="statement not covered">		from = Object(arguments[s]);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		for (var key in from) {</span>
-<span class="cstat-no" title="statement not covered" >			if (hasOwnProperty.call(from, key)) {</span>
-<span class="cstat-no" title="statement not covered" >				to[key] = from[key];</span>
+<span class="cstat-no" title="statement not covered">		for (var key in from) {</span>
+<span class="cstat-no" title="statement not covered">			if (hasOwnProperty.call(from, key)) {</span>
+<span class="cstat-no" title="statement not covered">				to[key] = from[key];</span>
 			}
 		}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		if (getOwnPropertySymbols) {</span>
-<span class="cstat-no" title="statement not covered" >			symbols = getOwnPropertySymbols(from);</span>
-<span class="cstat-no" title="statement not covered" >			for (var i = 0; i &lt; symbols.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >				if (propIsEnumerable.call(from, symbols[i])) {</span>
-<span class="cstat-no" title="statement not covered" >					to[symbols[i]] = from[symbols[i]];</span>
+<span class="cstat-no" title="statement not covered">		if (getOwnPropertySymbols) {</span>
+<span class="cstat-no" title="statement not covered">			symbols = getOwnPropertySymbols(from);</span>
+<span class="cstat-no" title="statement not covered">			for (var i = 0; i &lt; symbols.length; i++) {</span>
+<span class="cstat-no" title="statement not covered">				if (propIsEnumerable.call(from, symbols[i])) {</span>
+<span class="cstat-no" title="statement not covered">					to[symbols[i]] = from[symbols[i]];</span>
 				}
 			}
 		}
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	return to;</span>
+<span class="cstat-no" title="statement not covered">	return to;</span>
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sat Apr 15 2017 19:57:39 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 08:05:36 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
